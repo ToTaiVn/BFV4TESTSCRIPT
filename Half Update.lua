@@ -1363,14 +1363,6 @@ spawn(function()
   end)
  end)
 
-STab:AddToggle({
-	Name = "Anti Afk",
-	Default = true,
-	Callback = function(Value)
-		_G.AFK = Value
-	end    
-})
-
 if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
 _G.DistanceMob = 20
   STab:AddSlider({
